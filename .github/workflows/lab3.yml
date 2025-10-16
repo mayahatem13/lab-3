@@ -9,6 +9,7 @@ jobs:
       - name: my-second-step
         run: echo "hello again!"
   new-job:
+    needs: my-job
     runs-on: ubuntu-latest
     steps:
       - name: new-step
